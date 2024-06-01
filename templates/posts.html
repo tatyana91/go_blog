@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Posts</title>
+    </head>
+    <body>
+        <h1>Posts ({{.PostsCount}} total)</h1>
+        <div>
+            <a href="/create">Create post</a>
+        </div>
+        <div>
+            {{range .Posts}}
+                <p>{{.}}</p>                
+            {{end}}
+        </div>
+    </body>
+</html>
